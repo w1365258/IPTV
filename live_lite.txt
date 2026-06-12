@@ -1,5 +1,5 @@
 更新时间,#genre#
-20260612 09:56,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226537/index.m3u8
+20260612 10:08,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226537/index.m3u8
 
 
 央视频道,#genre#
@@ -493,6 +493,7 @@ CCTV17,https://t.freetv.fun/live/cctv17hd.m3u8
 老故事,http://110.154.192.30:7788/884121956
 老故事,http://gslbmgsplive.miguvideo.com/migu/kailu/cctvlaogushi/50/20231109/index.m3u8?msisdn=33234b89f8efc2339ace4b4c6e485af9&mdspid=&spid=699004&netType=0&sid=5910022002&pid=2028597139&timestamp=20260612070053&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=884121956&ParentNodeID=-99&assertID=5910022002&client_ip=39.98.70.128&SecurityKey=20260612070053&promotionId=&mvid=5900006372&mcid=500020&playurlVersion=WX-A1-9.6.0.4-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=ce1aea074a9f0bc6dd061835f6eaf3b8&ddCalcu=8cbev31afalaeaea60f7543a891f600bdcd6&sv=10004&ct=android
 老故事,http://124.77.202.8:49155/884121956
+老故事,http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/cctvlaogushi/50/20231109/index.m3u8?msisdn=202606121002198c177f07950547a0989fadd20f1ce613&mdspid=&spid=699004&netType=0&sid=5910022002&pid=2028597139&timestamp=20260612100219&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=884121956&ParentNodeID=-99&assertID=5910022002&client_ip=171.8.79.254&SecurityKey=20260612100219&promotionId=&mvid=5900006372&mcid=500020&playurlVersion=WX-A1-9.6.0.4-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=6c139c03292918680398bcdd1c17a166
 老故事,http://8.138.7.223/tv/migu3.php?id=lgs
 发现之旅,http://38.75.136.137:98/gslb/dsdqpub/fxzl.m3u8?auth=testpub
 发现之旅,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=fxzl
@@ -508,6 +509,7 @@ CCTV17,https://t.freetv.fun/live/cctv17hd.m3u8
 发现之旅,http://47.104.178.59:3566/624878970
 发现之旅,http://110.154.192.30:7788/624878970
 发现之旅,http://gslbmgsplive.miguvideo.com/wd_r3/cnr/faxianzhilv/2000/index.m3u8?msisdn=e12743828f907fe719845451c3e2085a&mdspid=&spid=699004&netType=0&sid=5500212893&pid=2028597139&timestamp=20260612070100&Channel_ID=0116_2600034600-99000-201600010010028&ProgramID=624878970&ParentNodeID=-99&assertID=5500212893&client_ip=39.98.82.147&SecurityKey=20260612070100&promotionId=&mvid=5100001701&mcid=500020&playurlVersion=WX-A1-9.6.0.4-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&puData=358931d82bfbf17774eae3ad8783b325&ddCalcu=5325v38ab9l33a817d88d2ab3febafe14777&sv=10004&ct=android
+发现之旅,http://hlsztemgsplive.miguvideo.com:8080/wd_r3/cnr/faxianzhilv/1000/index.m3u8?msisdn=202606121002199df358385f964f67b8f99563e29e87ef&mdspid=&spid=699004&netType=0&sid=5500212893&pid=2028597139&timestamp=20260612100219&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=624878970&ParentNodeID=-99&assertID=5500212893&client_ip=171.8.79.254&SecurityKey=20260612100219&promotionId=&mvid=5100001701&mcid=500020&playurlVersion=WX-A1-9.6.0.4-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=826accdb70e670b8ee1857abc1943d0b
 发现之旅,http://8.138.7.223/tv/migu3.php?id=fxzl
 CCTV4K,https://t.freetv.fun/live/cctv-4kgao-qing-6.m3u8
 CCTV4K,https://t.freetv.fun/live/cctv-4kgao-qing-5.m3u8
@@ -529,7 +531,21 @@ CCTV4K,https://live.264788.xyz/channel/cctv4k?streamid=84c255985963e0e411a189991
 CCTV4K,https://stream1.freetv.fun/cctv4k-2.ctv
 CCTV4K,https://live.264788.xyz/channel/cctv4k?streamid=ddf7c8a2b9355fd0327077c06958bd0f&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
 CCTV4K,https://live.264788.xyz/channel/cctv4k?streamid=69b8ad870d6e6b638349a2eb5d3c6e98&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+CCTV8K,https://t.freetv.fun/live/cctv-8-2.m3u8
+CCTV8K,https://t.freetv.fun/live/cctv-08.m3u8
+CCTV8K,https://t.freetv.fun/live/cctv-8.m3u8
+CCTV8K,https://t.freetv.fun/live/cctv-8-5.m3u8
+CCTV8K,https://t.freetv.fun/live/cctv-8kchao-gao-qing-4.m3u8
+CCTV8K,https://t.freetv.fun/live/cctv-8-1.m3u8
+CCTV8K,https://t.freetv.fun/live/cctv-8kchao-gao-qing-2.m3u8
+CCTV8K,https://t.freetv.fun/live/cctv-8kchao-gao-qing-3.m3u8
+CCTV8K,https://t.freetv.fun/live/cctv-8hd-2.m3u8
+CCTV8K,https://t.freetv.fun/live/cctv-8-3.m3u8
 CCTV8K,http://198.204.240.250:82/live/cctv8k.m3u8
+CCTV8K,https://t.freetv.fun/live/cctv-8kchao-gao-qing.m3u8
+CCTV8K,https://t.freetv.fun/live/cctv-8hd.m3u8
+CCTV8K,https://t.freetv.fun/live/cctv-8kchao-gao-qing-1.m3u8
+CCTV8K,https://t.freetv.fun/live/cctv-8hd-1.m3u8
 CCTV8K,http://192.151.150.154/live/cctv8k.m3u8
 CCTV8K,http://38.75.136.137:98/gslb/dsdqpub/cctv8k.m3u8?auth=testpub
 CCTV8K,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv8k
@@ -548,6 +564,7 @@ CETV1,https://iptv.catvod.com/live.php?id=CETV1&line=1
 CETV1,http://183.11.239.36:808/hls/122/index.m3u8
 CETV1,http://47.104.178.59:3566/923287154
 CETV1,http://120.76.248.139/live/bfgd/4200000135.m3u8
+CETV1,http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/cetv1/50/20240709/index.m3u8?msisdn=20260612100239347e4ac8a0e44154b7823674374d42b6&mdspid=&spid=699004&netType=0&sid=5910022150&pid=2028597139&timestamp=20260612100239&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=923287154&ParentNodeID=-99&assertID=5910022150&client_ip=171.8.79.254&SecurityKey=20260612100239&promotionId=&mvid=5900006636&mcid=500020&playurlVersion=WX-A1-9.6.0.4-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=7006bdb3f9a45c8c33748703a295f0e8
 CETV2,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226425/index.m3u8
 CETV2,http://player.cntv.cn/standard/live_HLSDRM20180524.swf?ChannelID=cetv2&videoTVChannel=cetv2&P2PChannelID=pd://cctv_p2p_hdcetv2&tai=cetv2&VideoName=cetv2&channelID=cetv2
 CETV2,http://198.204.228.26/live/cetv2.m3u8
@@ -558,6 +575,7 @@ CETV2,https://iptv.catvod.com/live.php?id=CETV2
 CETV2,http://183.11.239.36:808/hls/78/index.m3u8
 CETV2,http://47.104.178.59:3566/923287211
 CETV2,http://120.76.248.139/live/bfgd/4200000492.m3u8
+CETV2,http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/cetv2/50/20240709/index.m3u8?msisdn=202606121002393dc3f70a69f84d2ca34caaf9a887eaf0&mdspid=&spid=699004&netType=0&sid=5910022152&pid=2028597139&timestamp=20260612100239&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=923287211&ParentNodeID=-99&assertID=5910022152&client_ip=171.8.79.254&SecurityKey=20260612100239&promotionId=&mvid=5900006638&mcid=500020&playurlVersion=WX-A1-9.6.0.4-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=91df44a154a59f1facd6dd4634611fc7
 CETV3,http://198.204.228.26/live/cetv3.m3u8
 CETV3,http://kkk.888.3116598.xyz/api.php?n=tttt&id=s067jF&tk=FgM0vQMejxvG
 CETV4,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225783/index.m3u8
@@ -568,6 +586,7 @@ CETV4,http://kkk.888.3116598.xyz/api.php?n=tttt&id=bzOgmq&tk=FgM0vQMejxvG
 CETV4,http://kkk.888.3116598.xyz/api.php?n=tttt&id=cFDXDG&tk=FgM0vQMejxvG
 CETV4,http://47.104.178.59:3566/923287339
 CETV4,http://183.11.239.36:808/hls/79/index.m3u8
+CETV4,http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/cetv4/50/20240709/index.m3u8?msisdn=202606121002393501ba13153b47299956b303beafa1c4&mdspid=&spid=699004&netType=0&sid=5910022154&pid=2028597139&timestamp=20260612100239&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=923287339&ParentNodeID=-99&assertID=5910022154&client_ip=171.8.79.254&SecurityKey=20260612100239&promotionId=&mvid=5900006640&mcid=500020&playurlVersion=WX-A1-9.6.0.4-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=b78d43001e5ca1c6973628295deb3523
 
 
 卫视频道,#genre#
@@ -1423,26 +1442,6 @@ CETV4,http://183.11.239.36:808/hls/79/index.m3u8
 星空卫视,https://stream1.freetv.fun/xing-kong-wei-shi-10.m3u8
 星空卫视,http://122.224.58.42:85/tsfile/live/1024_1.m3u8?key=txiptv&playlive=1&authid=0
 星空卫视,http://xhyx.gz.cn:1698/hls/35/index.m3u8
-Channel[V],https://t.freetv.fun/live/tempe-channel-11-2.m3u8
-Channel[V],https://t.freetv.fun/live/chile-channel-720p-1.m3u8
-Channel[V],https://t.freetv.fun/live/light-channel.m3u8
-Channel[V],https://t.freetv.fun/live/channel-win.m3u8
-Channel[V],https://t.freetv.fun/live/desi-channel.m3u8
-Channel[V],https://t.freetv.fun/live/gs-channel.m3u8
-Channel[V],https://t.freetv.fun/live/i-am-channel.m3u8
-Channel[V],https://t.freetv.fun/live/kartoon-channel.m3u8
-Channel[V],https://t.freetv.fun/live/ficom-channel.m3u8
-Channel[V],https://t.freetv.fun/live/xtremo-channel.m3u8
-Channel[V],https://t.freetv.fun/live/bom-channel.m3u8
-Channel[V],https://t.freetv.fun/live/cowboy-channel.m3u8
-Channel[V],https://t.freetv.fun/live/warner-channel-2.m3u8
-Channel[V],https://t.freetv.fun/live/ent-channel.m3u8
-Channel[V],https://t.freetv.fun/live/light-channel-2.m3u8
-Channel[V],https://t.freetv.fun/live/corfu-channel.m3u8
-Channel[V],https://t.freetv.fun/live/super-channel-12.m3u8
-Channel[V],https://t.freetv.fun/live/kurd-channel.m3u8
-Channel[V],https://t.freetv.fun/live/channel-11-scottsdale-az.m3u8
-Channel[V],https://t.freetv.fun/live/mo-channel.m3u8
 TVBPearl,http://r.jdshipin.com/jUx8K
 TVBPearl,http://67.220.71.199:2347/livehttpplay?channel_id=20125
 TVBPearl,http://67.220.71.199:2347/livehttpplay?channel_id=30026
@@ -1459,6 +1458,18 @@ TVBPearl,http://php.jdshipin.com/PLTV/iptv.php?id=mzt
 TVBPearl,http://r.jdshipin.com/GeWKr?id=mzt720
 TVBPearl,https://aktv.top/AKTV/live/aktv/null-2/AKTV.m3u8
 TVBPearl,http://122.152.202.33/s/81a8a44f/index.m3u8?id=23
+TVBPlus,https://t.freetv.fun/live/atv-plus-1.m3u8
+TVBPlus,https://t.freetv.fun/live/etv-plus-720p.m3u8
+TVBPlus,https://t.freetv.fun/live/tvb-plus-5.m3u8
+TVBPlus,https://t.freetv.fun/live/etv-plus-1.m3u8
+TVBPlus,https://o11.163189.xyz/stream/tvb/tvbp/
+TVBPlus,http://r.jdshipin.com/Nr5jq
+TVBPlus,http://php.jdshipin.com/TVOD/iptv.php?id=tvbp
+TVBPlus,https://stream1.freetv.fun/tvb-j2-2.ctv
+TVBPlus,http://bak.dou.ddns-ip.net/api.php?n=xxxtw&id=aCMBgd&tk=SLK5QjnsRiya
+TVBPlus,http://cdn.132.us.kg/live/tvbp/stream.m3u8
+TVBPlus,https://stream1.freetv.fun/tvb-j2-1.m3u8
+TVBPlus,http://rihou.cc:555/tv/[Pd]Plus综合
 TVB星河,https://t.freetv.fun/live/tvbxing-he-1.m3u8
 TVB星河,http://o11.163189.xyz/stream/live/tvbxh/
 TVB星河,http://php.jdshipin.com:8880/PLTV/iptv.php?id=xinghe
