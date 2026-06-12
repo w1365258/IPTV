@@ -115,6 +115,14 @@ def load_corrections(corrections_path: str) -> dict:
 def clean_channel_name(name: str) -> str:
     if not name:
         return ""
+        
+    # 全角空格转半角
+    name = name.replace("　", " ")
+    # 删除复制粘贴带来的零宽隐形空白
+    name = re.sub(r'[\u200b\u200c\u200d\u200e\u200f]', '', name)
+    # 删除所有半角空格
+    name = name.replace(" ", "")
+    
     for item in REMOVAL_LIST:
         name = name.replace(item, "")
     name = name.replace("CCTV-", "CCTV")
