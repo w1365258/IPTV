@@ -6,11 +6,12 @@ from datetime import datetime, timedelta, timezone
 import opencc
 
 # ===================== 全局核心配置 =====================
-# 指定按TXT文件内顺序排列的分类，其余自动字典序排序，按需增删
+# 指定按TXT文件内顺序排列的分类，其余自动字典序排序，按需增删ÏÒ
 ORDERED_CHANNEL_TYPES = ["央视频道", "卫视频道", "港澳台", "电影频道", "电视剧频道", "埋堆堆", "咪咕直播"]
 # 频道名称清理字符集
 REMOVAL_LIST = [
-    "「IPV4」", "「IPV6」", "[ipv6]", "[ipv4]", "_电信", "电信", "（HD）", "[超清]","高清", "超清", "-HD", "(HK)", "AKtv", "@", "IPV6", "🎞️", "🎦","[BD]", "[VGA]", "[HD]", "[SD]", "(1080p)", "(720p)", "(480p)", "HD","｜"
+    "「IPV4」", "「IPV6」", "[ipv6]", "[ipv4]", "_电信", "电信", "（HD）", "[超清]","高清", "超清", "-HD", "(HK)", "AKtv", "@", 
+    "IPV6", "🎞️", "🎦","[BD]", "[VGA]", "[HD]", "[SD]", "(1080p)", "(720p)", "(480p)", "HD", "｜", "NewTV-", "New_"
 ]
 # 网络请求配置
 USER_AGENT = "PostmanRuntime-ApipostRuntime/1.1.0"
@@ -119,10 +120,7 @@ def clean_channel_name(name: str) -> str:
     name = name.replace("CCTV-", "CCTV")
     name = name.replace("CCTV0", "CCTV")
     name = name.replace("PLUS", "+")
-    name = name.replace("NewTV-", "NewTV")
     name = name.replace("iHOT-", "iHOT")
-    name = name.replace("NEW", "New")
-    name = name.replace("New_", "New")
     return name.strip()
 
 def clean_url(url: str) -> str:
@@ -137,43 +135,51 @@ def correct_channel_name(name: str, corrections: dict) -> str:
     return corrections[name] if corrections[name] != name else name
 
 # ===================== 频道字典加载 =====================
-def load_channel_dictionaries(main_dir: str, local_dir: str) -> tuple[dict, dict, list]:
-    main_channels = {
-        "央视频道": "央视频道.txt", "卫视频道": "卫视频道.txt", "体育频道": "体育频道.txt",
-        "电影频道": "电影.txt", "电视剧频道": "电视剧.txt", "港澳台": "港澳台.txt",
-        "国际台": "国际台.txt", "纪录片": "纪录片.txt", "戏曲频道": "戏曲频道.txt",
-        "解说频道": "解说频道.txt", "春晚": "春晚.txt", "NewTV": "NewTV.txt",
-        "iHOT": "iHOT.txt", "儿童频道": "儿童频道.txt", "综艺频道": "综艺频道.txt",
-        "埋堆堆": "埋堆堆.txt", "音乐频道": "音乐频道.txt", "游戏频道": "游戏频道.txt",
-        "收音机频道": "收音机频道.txt", "直播中国": "直播中国.txt", "MTV": "MTV.txt",
-        "咪咕直播": "咪咕直播.txt"
-    }
-    local_channels = {
-        "上海频道": "上海频道.txt", "浙江频道": "浙江频道.txt", "江苏频道": "江苏频道.txt",
-        "广东频道": "广东频道.txt", "湖南频道": "湖南频道.txt", "安徽频道": "安徽频道.txt",
-        "海南频道": "海南频道.txt", "内蒙频道": "内蒙频道.txt", "湖北频道": "湖北频道.txt",
-        "辽宁频道": "辽宁频道.txt", "陕西频道": "陕西频道.txt", "山西频道": "山西频道.txt",
-        "山东频道": "山东频道.txt", "云南频道": "云南频道.txt", "北京频道": "北京频道.txt",
-        "重庆频道": "重庆频道.txt", "福建频道": "福建频道.txt", "甘肃频道": "甘肃频道.txt",
-        "广西频道": "广西频道.txt", "贵州频道": "贵州频道.txt", "河北频道": "河北频道.txt",
-        "河南频道": "河南频道.txt", "黑龙江频道": "黑龙江频道.txt", "吉林频道": "吉林频道.txt",
-        "江西频道": "江西频道.txt", "宁夏频道": "宁夏频道.txt", "青海频道": "青海频道.txt",
-        "四川频道": "四川频道.txt", "天津频道": "天津频道.txt", "新疆频道": "新疆频道.txt"
-    }
+def load_channel_dictionaries(main_dir: str, local_dir: str) -> tuple[dict, dict]:
+    # 主频道数组
+    main_name_list = [
+        "央视频道", "卫视频道", "体育频道", "电影频道", "电视剧频道", "港澳台",
+        "国际台", "纪录片", "戏曲频道", "解说频道", "春晚", "NewTV",
+        "iHOT", "儿童频道", "综艺频道", "埋堆堆", "音乐频道", "游戏频道",
+        "收音机频道", "直播中国", "MTV", "咪咕直播"
+    ]
+    # 自动生成 {分类名: 分类名.txt}
+    main_channels = {name: f"{name}.txt" for name in main_name_list}
+
+    # 地方台数组
+    local_name_list = [
+        "上海频道", "浙江频道", "江苏频道", "广东频道", "湖南频道", "安徽频道",
+        "海南频道", "内蒙频道", "湖北频道", "辽宁频道", "陕西频道", "山西频道",
+        "山东频道", "云南频道", "北京频道", "重庆频道", "福建频道", "甘肃频道",
+        "广西频道", "贵州频道", "河北频道", "河南频道", "黑龙江频道", "吉林频道",
+        "江西频道", "宁夏频道", "青海频道", "四川频道", "天津频道", "新疆频道"
+    ]
+    local_channels = {name: f"{name}.txt" for name in local_name_list}
 
     main_dict = {}
     for chn_type, filename in main_channels.items():
         file_path = os.path.join(main_dir, filename)
-        lines = read_txt(file_path)
-        main_dict[chn_type] = lines
-        print(f"[INFO] 加载主频道 {chn_type}: {len(lines)} 个")
+        raw_lines = read_txt(file_path)
+        # 关键：和源频道执行完全一样的清洗流程，保证名称一致
+        clean_lines = []
+        for name in raw_lines:
+            n = traditional_to_simplified(name)
+            n = clean_channel_name(n)
+            clean_lines.append(n)
+        main_dict[chn_type] = clean_lines
+        print(f"[INFO] 加载主频道 {chn_type}: {len(raw_lines)} 个")
 
     local_dict = {}
     for chn_type, filename in local_channels.items():
         file_path = os.path.join(local_dir, filename)
-        lines = read_txt(file_path)
-        local_dict[chn_type] = lines
-        print(f"[INFO] 加载地方台 {chn_type}: {len(lines)} 个")
+        raw_lines = read_txt(file_path)
+        clean_lines = []
+        for name in raw_lines:
+            n = traditional_to_simplified(name)
+            n = clean_channel_name(n)
+            clean_lines.append(n)
+        local_dict[chn_type] = clean_lines
+        print(f"[INFO] 加载地方台 {chn_type}: {len(raw_lines)} 个")
 
     return main_dict, local_dict
 
@@ -460,10 +466,5 @@ if __name__ == "__main__":
     print(f"[STAT] live.txt行数: {live_count}")
     print(f"[STAT] others.txt行数: {others_count}")
     print("=" * 60)
-
-
-
-
-
 
 
