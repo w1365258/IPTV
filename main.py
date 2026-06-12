@@ -343,7 +343,7 @@ def generate_live_text(classifier: ChannelClassifier, main_dict: dict) -> tuple[
     # 生成lite精简版
     lite_lines = header.copy()
     lite_sort_types = [
-        "央视频道", "卫视频道", "港澳台", "电影频道", "电视剧频道", "综艺频道",
+        "央视频道", "卫视频道", "港澳台", "电影", "电视剧", "综艺频道",
         "NewTV", "iHOT", "体育频道", "咪咕直播", "埋堆堆", "音乐频道", "游戏频道", "解说频道"
     ]
     for chn_type in lite_sort_types:
